@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script>script.js</script>
+    <!-- CSS files-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+   </head>
+  <body>
+    <!-- page content -->
+    
+    <h1 class="col-md-12 text-center" style="color: white; background-color: black; text-align: left;">Dashboard</h1>
+    
+    <br>
+    <div class="table-responsive col-md-10">
+        <button id="addNewRow" style="color: white; background-color: black; margin: 10px;">Add A New Row</button>
+<table class="table table-bordered table-striped table-hover table-condensed  text-center" id="DyanmicTable">
+  <thead>
+    <tr>
+      <th class="text-center">
+        ID
+      </th>
+      <th class="text-center">
+        Student Name 
+      </th>
+      <th class="text-center">
+        Student roll
+      </th>
+      <th class="text-center">
+       Subject
+      </th>
+      <th>
+        Marks
+      </th>
+      <th>
+        Marked by
+      </th>
+      <th>
+        Save
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        1
+      </td>
+      <td>
+        anil  vashi
+      </td>
+      <td>
+        98765
+      </td>
+      <td>
+        english
+      </td>
+      <td>
+        95
+      </td>
+      <td>
+        teacher@gmail.com
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <!--JS Files-->
+<script  src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+<script src="bootstable.min.js"></script>
+<script>
+ $('#DyanmicTable').SetEditable({ $addButton: $('#addNewRow')});
+</script>
+
+  </body>
+</html>
